@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:orientation="vertical"
+    tools:context=".PlayActivity">
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steps"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Chronometer
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <!--<ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.8"
+            android:src="@drawable/img_8"
+            android:background="@drawable/back"/>-->
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <!--<ImageView
+            android:id="@+id/music"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/volume" />-->
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/my_ramka2"
+            android:id="@+id/container"
+            android:layout_width="320dp"
+            android:gravity="center"
+            android:layout_height="300dp"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back_button"
+                android:text="1"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/btn_1"
+                android:text="2"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/btn_2"
+                android:text="3"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/btn_3"
+                android:background="@drawable/back_button"
+                android:text="4"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_1"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/back_button"
+                android:text="5"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_1"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/btn_5"
+                android:background="@drawable/back_button"
+                android:text="6"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_1"
+                android:layout_toRightOf="@id/btn_6"
+                android:text="7"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_4"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/btn_7"
+                android:background="@drawable/back_button"
+                android:text="8"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_5"
+                android:text="9"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_10"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/btn_9"
+                android:layout_below="@+id/btn_6"
+                android:text="10"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_11"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_6"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/btn_10"
+                android:background="@drawable/back_button"
+                android:text="11"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_12"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_8"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/btn_11"
+                android:background="@drawable/back_button"
+                android:text="12"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_13"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_9"
+                android:text="13"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_14"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_9"
+                android:layout_toRightOf="@id/btn_13"
+                android:text="14"
+                android:textColor="@color/white" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_margin="2dp"
+                android:background="@drawable/back_button"
+                android:id="@+id/btn_15"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_9"
+                android:layout_toRightOf="@id/btn_14"
+                android:text="15"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_16"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/btn_12"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toRightOf="@id/btn_15"
+                android:background="@drawable/back_button_empty"
+                android:text=""
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:padding="5dp">
+
+
+        <!--<androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_finish"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:layout_weight="2"
+            android:text="Finish"
+            android:textColor="@color/white"
+            android:textSize="20sp" />-->
+        <ImageView
+            android:id="@+id/btn_finish"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="start"
+            android:src="@drawable/home_ic"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/music"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/sound_off" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/btn_restart"
+            android:layout_gravity="end"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:src="@drawable/restart_ic"/>
+
+        <!--<androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/btn_restart"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:background="@drawable/back"
+            android:layout_weight="2"
+            android:text="Restart"
+            android:textSize="20sp" />-->
+    </LinearLayout>
+</LinearLayout>

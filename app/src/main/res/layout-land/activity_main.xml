@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/image"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/buttons" />
+
+            <TextView
+                android:id="@+id/text_start"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="PLAY"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/buttons" />
+
+            <TextView
+                android:id="@+id/text_info"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="INFO"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/buttons" />
+
+            <TextView
+                android:id="@+id/text_results"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="RECORDS"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:clickable="true"
+                android:scaleType="centerInside"
+
+                android:src="@drawable/buttons" />
+
+            <TextView
+                android:id="@+id/text_exit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="EXIT"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+        <!--<TextView
+            android:textStyle="bold"
+            android:layout_marginTop="75dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="START"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/text_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INFO"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"/>
+        <TextView
+            android:id="@+id/text_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECORDS"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <TextView
+            android:id="@+id/text_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:gravity="center"/>-->
+    </LinearLayout>
+    <ImageView
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/music"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/volume_button" />
+    <!--<LinearLayout
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main"
+        android:orientation="vertical">
+        <TextView
+            android:fontFamily="monospace"
+            android:id="@+id/text_start"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="START"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:fontFamily="monospace"
+            android:id="@+id/text_info"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:fontFamily="monospace"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_results"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RECORDS"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:fontFamily="monospace"
+            android:id="@+id/text_exit"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EXIT"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>-->
+
+</FrameLayout>
+<!--<LinearLayout
+android:layout_gravity="center"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginHorizontal="200dp"
+android:gravity="center"
+android:orientation="vertical">
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/text_start"
+    android:gravity="center"
+    android:background="@drawable/back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:paddingHorizontal="50dp"
+    android:text="Start"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:textStyle="bold" />
+
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="20dp" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/text_info"
+    android:gravity="center"
+    android:background="@drawable/back"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:text="About"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:textStyle="bold" />
+
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="20dp" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/text_results"
+    android:padding="10dp"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Records"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:textStyle="bold" />
+<Space
+    android:layout_width="wrap_content"
+    android:layout_height="20dp" />
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/text_exit"
+    android:background="@drawable/back"
+    android:padding="10dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="EXIT"
+    android:textColor="@color/white"
+    android:textSize="28sp"
+    android:textStyle="bold" />
+</LinearLayout>-->
